@@ -1,0 +1,29 @@
+{
+    "name": "Sachin Color picker",
+
+    "description": "A Color Picker extension",
+
+    "version": "1.0",
+
+    "manifest_version": 3,
+
+    "background": {
+
+        "service_worker": "background.js"
+    },
+    
+    "permissions": [
+        "storage", 
+        "activeTab",
+        "scripting"
+    ],
+
+    "options_page": "options.html",
+
+    "action": {
+        "default_popup":"popup.html"
+    },
+    "icons": {
+        "48": "./images/picker.png"
+    }
+}
